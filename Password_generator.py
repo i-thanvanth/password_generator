@@ -6,7 +6,7 @@ import random
 print(" Welcome to Password Generator :)")
 print("\n Here are the various types of passwords that you could produce using this program")
 i = int(input("\n 1)just characters(lower and upper case)\n 2)characters and numbers\n 3)characters and numbers and special characters\n\n ENTER THE OPTION:"))
-f = open("PASS_LIST.txt","w+") #a text file where the passwords will be stored for your use
+f = open("PASS_LIST.txt","w+") # this opens a text file where the passwords will be stored for your use
 reason = input(" Where will the password be used? :") 
 #the actual program:
 
@@ -41,7 +41,7 @@ def char_and_num():
     print(" Here's your password: ",string)
     f.write("\n%s : %s" %(reason, string))  
 
-#chars, numbers and strings
+#chars, numbers and special characters
 def char_num_sp():
     string = ""
     rand_char = random.randint(10,30)
